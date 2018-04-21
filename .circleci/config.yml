@@ -20,9 +20,7 @@ jobs:
       - checkout
 
       # Install php dependencies
-      - run:
-        name: Install PHP zip extension
-        command: sudo docker-php-ext-install zip
+      - run: sudo docker-php-ext-install zip
 
       # Download and cache dependencies
       - restore_cache:
